@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeHive · premium store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="brand-emblem"><i class="bi bi-house-heart-fill"></i></span>
+      <span class="brand-word">HomeHive</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Store</a></li>
+        <li class="nav-item"><a class="nav-link" href="#order">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="row mb-5 pb-3">
+    <div class="col-lg-8 mx-auto text-center">
+      <h1 class="display-3 fw-light mb-4">Welcome to my Shop.<br> <span class="brand-accent">Buy anything you want.</span></h1>
+      <p class="lead text-secondary">Showcase my products at their absolute best. A modern, expressive Products.</p>
+    </div>
+  </div>
+
+  <section id="products" class="my-5 pt-4">
+    <div class="section-header">
+    </div>
+    <div class="row g-5" id="products-container"></div>
+  </section>
+
+  <section id="order" class="my-5 pt-5">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto">
+        <div class="form-section">
+          <h3 class="mb-4 fw-light form-title">Start an order</h3>
+          <p class="text-secondary mb-5">We'll get back to you within a day usually sooner.</p>
+          <form id="orderForm">
+            <div class="mb-4">
+              <label for="fullName" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="e.g. Taylor Chen">
+            </div>
+            <div class="mb-4">
+              <label for="emailAddress" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="EmailAddress@example.com">
+            </div>
+            <div class="mb-4">
+              <label for="productSelect" class="form-label">Product</label>
+              <select class="form-select" id="productSelect">
+                <option selected disabled>Choose a product</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label for="quantityInput" class="form-label">Quantity</label>
+              <input type="number" class="form-control" id="quantityInput" min="1" value="1">
+            </div>
+            <button type="submit" class="btn-primary-modern">Submit order <i class="bi bi-arrow-right ms-2"></i></button>
+            <p class="text-center text-muted small mt-4">Have a nice day!</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="modern-footer">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-md-5">
+        <h4 class="fw-light text-white mb-3 footer-logo">
+         <i class="bi bi-house-heart-fill"></i> 
+         <span>HomeHive</span>
+        </h4>
+        <p class="mb-4 footer-text">Expressive online stores. Powered since 2025. Everywhere..</p>
+        <div class="social-icons">
+           </a href="#"><i class="bi bi-instagram"></i></a>
+           </a href="#"><i class="bi bi-twitter-x"></i></a>
+           </a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 offset-md-1">
+        <h5 class="fw-light text-white mb-3">Contact</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-envelope me-2"></i> <a href="mailto:HomeHive@gmail.com">HomeHive@gmail.com</a></li>
+          <li class="mb-3"><i class="bi bi-telephone me-2"></i> 09547689421</li>
+          <li class="mb-3"><i class="bi bi-geo-alt me-2"></i> Purok Pag-ibig, Makilam Tagum City in Davao Del Norte</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright text-center pt-4 mt-3">
+      <span>Copyright @2025 HomeHive, Inc. | All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
